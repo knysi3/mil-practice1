@@ -1,0 +1,77 @@
+/* ここから下に記載していく */
+/* ALL */
+#page {
+    width: 800px;
+    margin: 0 auto;
+    /* text-align: center; */
+}
+
+.image {
+    width: 800px;
+}
+
+/* Header */
+header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    align-items: center;
+}
+
+.title {
+    margin-right: auto;
+}
+
+.menu-item {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.field {
+    /* display:flex を設定してみよう */
+    display: flex;
+    justify-content: center;
+}
+
+
+/* header pic */
+.container {
+    width: 600px;
+    height: auto;
+    position: relative;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* header pic */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: aqua;
+    text-align: center;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    padding: 50px 0;
+    background-color: #707070;
+}
+
+.footer-text {
+    color: #707070;
+}
