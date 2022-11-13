@@ -1,13 +1,38 @@
-/* ここから下に記載していく */
-/* ALL */
+/* coommon */
 #page {
-    width: 800px;
+    width: 1200px;
+    /* line-height:25px; 全体がくずれてしまう*/
     margin: 0 auto;
-    /* text-align: center; */
 }
 
-.image {
-    width: 800px;
+a {
+    text-decoration: none;
+}
+
+
+/* common button */
+.common-button a {
+    background: rgb(133, 185, 65);
+    font-size: 18px;
+    border-radius: 50px;
+    font-weight: 1000;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 300px;
+    padding: 15px 15px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+}
+.common-button a:hover {
+    background: #3c10b4;
+    color: #FFF;
+}
+.common-button a:after {
+    content: '';
+    position: absolute;
 }
 
 /* Header */
@@ -30,7 +55,6 @@ header {
 }
 
 .field {
-    /* display:flex を設定してみよう */
     display: flex;
     justify-content: center;
 }
@@ -48,6 +72,10 @@ header {
     height: auto;
 }
 
+/* news hover */
+.news-hover :hover{
+    transform:scale(1.01,1.01);
+}
 
 /* header pic */
 
@@ -63,15 +91,60 @@ header {
     text-align: center;
 }
 
+
+/* form-table */
+HTML CSSResult Skip Results Iframe
+EDIT ON
+body {
+  width: 100%;
+}
+
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  padding: 0;
+  width: 650px;
+  table-layout: fixed;
+  color: #000;
+}
+
+table th {
+  padding: 15px 0;
+  border-right: 1px solid #bbb;
+  text-align: left;
+}
+
+table tr {
+  background-color: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #bbb;
+}
+
+table tr:last-child{
+   border-bottom: none
+}
+
+table td {
+  padding: 1em 10px 1em 1em;
+  border-right: 1px solid #bbb;
+  text-align: left;
+}
+
+table th:last-child,
+table td:last-child{
+  border: none;
+}
+
 /* footer */
 footer {
-    width: 100%;
-    height: 60px;
     text-align: center;
-    padding: 50px 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: #707070;
 }
 
 .footer-text {
     color: #707070;
 }
+
